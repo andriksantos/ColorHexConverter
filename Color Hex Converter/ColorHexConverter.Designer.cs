@@ -42,6 +42,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -49,6 +50,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.TextBox3);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.listBox1);
@@ -62,17 +64,17 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(44, 242);
+            this.button1.Location = new System.Drawing.Point(24, 239);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(73, 44);
+            this.button1.Size = new System.Drawing.Size(94, 44);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 252);
+            this.textBox1.Location = new System.Drawing.Point(124, 252);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 20);
+            this.textBox1.Size = new System.Drawing.Size(148, 20);
             this.textBox1.TabIndex = 1;
             // 
             // listBox1
@@ -175,6 +177,28 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // TextBox3
+            // 
+            this.TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox3.DefaultText = "";
+            this.TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBox3.DisabledState.Parent = this.TextBox3;
+            this.TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox3.FocusedState.Parent = this.TextBox3;
+            this.TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox3.HoverState.Parent = this.TextBox3;
+            this.TextBox3.Location = new System.Drawing.Point(124, 279);
+            this.TextBox3.Name = "TextBox3";
+            this.TextBox3.PasswordChar = '\0';
+            this.TextBox3.PlaceholderText = "";
+            this.TextBox3.SelectedText = "";
+            this.TextBox3.ShadowDecoration.Parent = this.TextBox3;
+            this.TextBox3.Size = new System.Drawing.Size(148, 36);
+            this.TextBox3.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -215,6 +239,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
+        private Guna.UI2.WinForms.Guna2TextBox TextBox3;
     }
 }
 

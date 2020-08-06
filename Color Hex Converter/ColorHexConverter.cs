@@ -40,7 +40,7 @@ namespace WindowsFormsApplication1
         {
             string str = listBox1.SelectedItem.ToString();
             Color c = Color.FromName(str);
-            textBox1.Text = Color_to_Hex(c);
+            TextBox3.Text = Color_to_Hex(c);
             button1.BackColor = c;
 
         }
