@@ -116,7 +116,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(43, 226);
+            this.button3.Location = new System.Drawing.Point(43, 237);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(177, 46);
             this.button3.TabIndex = 3;
@@ -125,9 +125,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 158);
+            this.label1.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(40, 176);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.Size = new System.Drawing.Size(39, 14);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             // 
@@ -227,7 +228,7 @@
             this.guna2Button4.Font = new System.Drawing.Font("Raleway", 9F);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(84, 100);
+            this.guna2Button4.Location = new System.Drawing.Point(84, 93);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
             this.guna2Button4.Size = new System.Drawing.Size(109, 33);
