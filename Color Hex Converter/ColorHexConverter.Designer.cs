@@ -30,19 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.About = new Guna.UI2.WinForms.Guna2Button();
+            this.Clear = new Guna.UI2.WinForms.Guna2Button();
+            this.Exit = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -50,9 +49,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.TextBox3);
+            this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Font = new System.Drawing.Font("Raleway", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 7);
@@ -62,6 +60,29 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Color to Hex Converter";
             // 
+            // textBox3
+            // 
+            this.textBox3.BorderRadius = 6;
+            this.textBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox3.DefaultText = "";
+            this.textBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox3.DisabledState.Parent = this.textBox3;
+            this.textBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox3.FocusedState.Parent = this.textBox3;
+            this.textBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox3.HoverState.Parent = this.textBox3;
+            this.textBox3.Location = new System.Drawing.Point(124, 239);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '\0';
+            this.textBox3.PlaceholderText = "List Box Color";
+            this.textBox3.SelectedText = "";
+            this.textBox3.ShadowDecoration.Parent = this.textBox3;
+            this.textBox3.Size = new System.Drawing.Size(148, 44);
+            this.textBox3.TabIndex = 3;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(24, 239);
@@ -69,13 +90,6 @@
             this.button1.Size = new System.Drawing.Size(94, 44);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(124, 252);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 20);
-            this.textBox1.TabIndex = 1;
             // 
             // listBox1
             // 
@@ -88,10 +102,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.guna2Button4);
+            this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(324, 7);
             this.groupBox2.Name = "groupBox2";
@@ -117,28 +131,11 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(80, 93);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 24);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Convert";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(58, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 20);
-            this.textBox2.TabIndex = 0;
-            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button6);
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.Exit);
+            this.groupBox3.Controls.Add(this.Clear);
+            this.groupBox3.Controls.Add(this.About);
             this.groupBox3.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(12, 324);
             this.groupBox3.Name = "groupBox3";
@@ -147,57 +144,96 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Select";
             // 
-            // button6
+            // textBox4
             // 
-            this.button6.Location = new System.Drawing.Point(55, 32);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(106, 33);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "About";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.textBox4.BorderRadius = 6;
+            this.textBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox4.DefaultText = "";
+            this.textBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox4.DisabledState.Parent = this.textBox4;
+            this.textBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox4.FocusedState.Parent = this.textBox4;
+            this.textBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox4.HoverState.Parent = this.textBox4;
+            this.textBox4.Location = new System.Drawing.Point(60, 44);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.PasswordChar = '\0';
+            this.textBox4.PlaceholderText = "Enter Color";
+            this.textBox4.SelectedText = "";
+            this.textBox4.ShadowDecoration.Parent = this.textBox4;
+            this.textBox4.Size = new System.Drawing.Size(154, 34);
+            this.textBox4.TabIndex = 4;
             // 
-            // button5
+            // About
             // 
-            this.button5.Location = new System.Drawing.Point(238, 32);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(106, 33);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Clear";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.About.BorderRadius = 6;
+            this.About.CheckedState.Parent = this.About;
+            this.About.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.About.CustomImages.Parent = this.About;
+            this.About.Font = new System.Drawing.Font("Raleway", 9F);
+            this.About.ForeColor = System.Drawing.Color.White;
+            this.About.HoverState.Parent = this.About;
+            this.About.Location = new System.Drawing.Point(52, 32);
+            this.About.Name = "About";
+            this.About.ShadowDecoration.Parent = this.About;
+            this.About.Size = new System.Drawing.Size(106, 33);
+            this.About.TabIndex = 3;
+            this.About.Text = "About";
+            this.About.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // button4
+            // Clear
             // 
-            this.button4.Location = new System.Drawing.Point(420, 32);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(106, 33);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Exit";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.Clear.BorderRadius = 6;
+            this.Clear.CheckedState.Parent = this.Clear;
+            this.Clear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Clear.CustomImages.Parent = this.Clear;
+            this.Clear.Font = new System.Drawing.Font("Raleway", 9F);
+            this.Clear.ForeColor = System.Drawing.Color.White;
+            this.Clear.HoverState.Parent = this.Clear;
+            this.Clear.Location = new System.Drawing.Point(237, 32);
+            this.Clear.Name = "Clear";
+            this.Clear.ShadowDecoration.Parent = this.Clear;
+            this.Clear.Size = new System.Drawing.Size(106, 33);
+            this.Clear.TabIndex = 4;
+            this.Clear.Text = "Clear";
+            this.Clear.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // TextBox3
+            // Exit
             // 
-            this.TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox3.DefaultText = "";
-            this.TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox3.DisabledState.Parent = this.TextBox3;
-            this.TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox3.FocusedState.Parent = this.TextBox3;
-            this.TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox3.HoverState.Parent = this.TextBox3;
-            this.TextBox3.Location = new System.Drawing.Point(124, 279);
-            this.TextBox3.Name = "TextBox3";
-            this.TextBox3.PasswordChar = '\0';
-            this.TextBox3.PlaceholderText = "";
-            this.TextBox3.SelectedText = "";
-            this.TextBox3.ShadowDecoration.Parent = this.TextBox3;
-            this.TextBox3.Size = new System.Drawing.Size(148, 36);
-            this.TextBox3.TabIndex = 3;
+            this.Exit.BorderRadius = 6;
+            this.Exit.CheckedState.Parent = this.Exit;
+            this.Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Exit.CustomImages.Parent = this.Exit;
+            this.Exit.Font = new System.Drawing.Font("Raleway", 9F);
+            this.Exit.ForeColor = System.Drawing.Color.White;
+            this.Exit.HoverState.Parent = this.Exit;
+            this.Exit.Location = new System.Drawing.Point(420, 32);
+            this.Exit.Name = "Exit";
+            this.Exit.ShadowDecoration.Parent = this.Exit;
+            this.Exit.Size = new System.Drawing.Size(106, 33);
+            this.Exit.TabIndex = 5;
+            this.Exit.Text = "Exit";
+            this.Exit.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.BorderRadius = 6;
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.Font = new System.Drawing.Font("Raleway", 9F);
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Location = new System.Drawing.Point(84, 100);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(109, 33);
+            this.guna2Button4.TabIndex = 6;
+            this.guna2Button4.Text = "Convert";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // Form1
             // 
@@ -216,7 +252,6 @@
             this.Text = "Color Hex Converter";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -229,17 +264,16 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private Guna.UI2.WinForms.Guna2TextBox TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox textBox3;
+        private Guna.UI2.WinForms.Guna2TextBox textBox4;
+        private Guna.UI2.WinForms.Guna2Button About;
+        private Guna.UI2.WinForms.Guna2Button Clear;
+        private Guna.UI2.WinForms.Guna2Button Exit;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
     }
 }
 

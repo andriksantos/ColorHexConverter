@@ -35,22 +35,38 @@ namespace WindowsFormsApplication1
             label1.Text = "";
             this.Opacity = 0.95;
         }
-
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string str = listBox1.SelectedItem.ToString();
             Color c = Color.FromName(str);
-            TextBox3.Text = Color_to_Hex(c);
+            textBox3.Text = Color_to_Hex(c);
             button1.BackColor = c;
-
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            string about = "";
+            about = "Version: 1.0\n" + "Author: AndrikSantos\n" + "Website: andriksantos.github.io";
+            MessageBox.Show(about, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            textBox3.Clear();
+            textBox4.Clear();
+        }
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void guna2Button4_Click(object sender, EventArgs e)
         {
             try
             {
-
-                string str = textBox2.Text;
+                string str = textBox4.Text;
                 Color c = Hex_to_Color(str);
                 label1.Text = "Name : " + c.Name;
                 button3.BackColor = c;
@@ -59,25 +75,6 @@ namespace WindowsFormsApplication1
             {
                 label1.Text = "Error !!!";
             }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            textBox1.Clear();
-            textBox2.Clear();
-           
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            string about = "";
-            about = "نویسنده برنامه : سالار اشگی \n" + "تحت زبان : سی شارپ 2008 \n" + "مرداد 88 ";
-            MessageBox.Show(about, "درباره سازنده نرم افزار ", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
