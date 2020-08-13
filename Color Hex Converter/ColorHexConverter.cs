@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using IOminds;
 
 namespace WindowsFormsApplication1
 {
@@ -33,7 +34,6 @@ namespace WindowsFormsApplication1
                 listBox1.Items.Add(s);
             }
             label1.Text = "";
-            this.Opacity = 0.95;
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -48,9 +48,8 @@ namespace WindowsFormsApplication1
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string about = "";
-            about = "Version: 1.0\n" + "Author: AndrikSantos\n" + "Website: andriksantos.github.io";
-            MessageBox.Show(about, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            presenta presentation = new presenta();
+            presentation.Show();
         }
         private void guna2Button2_Click(object sender, EventArgs e)
         {
@@ -61,7 +60,6 @@ namespace WindowsFormsApplication1
         {
             Application.Exit();
         }
-
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             try
